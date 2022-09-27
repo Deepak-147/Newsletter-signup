@@ -3,10 +3,10 @@ const bodyParser = require('body-parser');
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const app = express();
 const port = process.env.PORT || 3000;
-const listId = "4489f55cf0";
+const listId = "4489f55cf0"; // Available at: https://us9.admin.mailchimp.com/lists/settings?id=1033397
 
 mailchimp.setConfig({
-    apiKey: "8f91b810182848ffc9ca75e4ef5f24be-us9",
+    apiKey: process.env.MAILCHIMP_API_KEY, // API key secret stored in Heroku config vars
     server: "us9",
 });
 
