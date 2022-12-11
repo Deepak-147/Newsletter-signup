@@ -12,7 +12,7 @@ mailchimp.setConfig({
     server: "us9",
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.listen(port, () => {
