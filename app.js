@@ -20,7 +20,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/signup.html");
 });
 
 app.post("/", (req, res) => {
